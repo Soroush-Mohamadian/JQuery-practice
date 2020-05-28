@@ -14,9 +14,12 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     font-family: shabnam;
     direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /***** header *****/
@@ -111,7 +114,7 @@ header span i {
     outline: none;
 }
 
-.rightSide form input.submit {
+#submit {
     background-color: #596157;
     border: none;
     border-radius: 5px;
@@ -122,6 +125,10 @@ header span i {
 
 .rightSide form input.submit:hover {
     background-color: #909690;
+}
+
+.btn{
+    display: inline;
 }
 
 
@@ -217,6 +224,15 @@ header span i {
     top: 0;
     right: 0;
     display: none;
+}
+
+#submit{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
 }
 
 @media only screen and (max-width: 800px) {
